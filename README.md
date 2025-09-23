@@ -17,7 +17,7 @@ Asignatura: **Análisis de Algoritmos**
 - Justifica con fórmulas y razonamiento.  
 
 ---
-# Parcial — Versión A
+# Parcial — Versión B
 
 ### Punto 1 (25 pts) — Ordena por complejidad
 Ordena de menor a mayor las siguientes funciones (asintóticamente).  
