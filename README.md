@@ -28,6 +28,9 @@ Si dos son del mismo orden, indícalo.
 
 ---
 
+R// log2n < n < sqrtnlog2n < nlog2n < n^0.999 < n^3/2 < n^2 < n^2/log2n < (2^n/2) * n <  3^n 
+
+
 ### Punto 2 (25 pts) — Identifica y confronta
 Asocia cada \(T(n)\) con un algoritmo plausible. Luego compara **dos pares** y encuentra el umbral de `n` con un `for` + `if`.
 
@@ -42,6 +45,15 @@ Algoritmos posibles:
 - Multiplicación de matrices cúbica  
 - Backtracking con poda leve  
 
+
+T3(n) = 0.01n^3 / Multiplicación de matrices cúbica 
+T4(n) = 1.5^n / Backtracking con poda leve
+T2(n) = 6n\log2(n) + 300 / Mergesort/Heapsort
+T1(n) = 5n^2 + 10n / Selection/Insertion
+
+Al comparar el Multiplicación de matrices cúbica vs Backtracking con poda leve, de la forma 0.01n^3 < 1.5^n , podemos evidenciar que el umbral en este caso es para todos los n>= a 1 , lo que quiere decir que su tiempo de ejecucion y consumo en memoria es mas optimo usar un Backtracking con poda leve que un Multiplicación de matrices cúbica a partir de n>=1
+
+Al comparar el Mergesort/Heapsort vs Selection/Insertion, de la forma 6n\log2(n) + 300 < 5n^2 + 10n , podemos evidenciar que el umbral en este caso es para todos los n>=7, lo que quiere decir que su tiempo de ejecucion y consumo en memoria es mas optimo usar un Selection/Insertion a partir de n>=7 que un Mergesort/Heapsort
 ---
 
 ### Punto 3 (25 pts) — Ejercicio lógico
